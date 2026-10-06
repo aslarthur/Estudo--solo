@@ -22,3 +22,23 @@ print (número1 / número2)
 número1 = float(input("Digite um número: "))
 número2 = float(input("Digite outro número: "))
 print (número1 % número2)
+
+#COMPARAÇÃO
+número1 = float(input("Digite um número: "))
+número2 = float(input("Digite outro número: "))
+print (número1 == número2)
+
+#DIFERENTE DE
+número1 = float(input("Digite um número: "))
+número2 = float(input("Digite outro número: "))
+print (número1 != número2)
+
+#MAIOR QUE
+número1 = float(input("Digite um número: "))
+número2 = float(input("Digite outro número: "))
+print (número1 > número2)
+
+#MENOR QUE
+número1 = float(input("Digite um número: "))
+número2 = float(input("Digite outro número: "))
+print (número1 < número2)
