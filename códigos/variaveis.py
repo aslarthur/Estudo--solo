@@ -11,4 +11,7 @@ dinheiro_na_conta = 51.40 #float = usado para representar números com casas dec
 
 #bool
 esta_estudando = True #bool = boolean, para representar se um valor é True (verdadeiro) ou False (falso)
-print (type)
+print (type (nome))
+print (type (idade))
+print (type (dinheiro_na_conta))
+print (type (esta_estudando))
