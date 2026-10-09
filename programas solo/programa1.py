@@ -24,6 +24,7 @@ while True:
     print (f"13. \033[1;4;32mConfirmar\033[m \033[1;4;33midade\033[m")
     print (f"14. \033[1;4;34mCadastro\033[m \033[1;4;35m com \033[m \033[1;4;36mconfirmação\033[m")
     print (f"15. \033[1;4;31mAnalisar\033[m \033[1;4;32mnome\033[m")
+    print (f"16. \033[1;4;36mTEMPORIZADOR\033[m")
     e()
     nova_cor = input("Digite o número ou o programa que ira querer: ")
     cor = nova_cor.upper().strip()
@@ -129,7 +130,7 @@ while True:
         l()
         dolar = real / 5.02
         l()
-        print (f"Com R${real} você consegue compar US${dolar:.2f}")
+        print (f"Com R${real} você consegue comprar US${dolar:.2f}")
         l()
     elif cor == "6" or cor == "PAR OU ÍMPAR":
         l()
@@ -324,24 +325,32 @@ while True:
                 l()
                 if fundo == "1" or fundo == "BRANCO":
                     print (f"\033[1;4;{cod};47mFUNDO: BRANCO COR: {txt}\033[m")
+                    break
                 elif fundo == "2" or fundo == "VERMELHO":
                     print (f"\033[1;4;{cod};41mFUNDO: VERMELHO COR: {txt}\033[m")
+                    break
                 elif fundo == "3" or fundo == "VERDE":
                     print (f"\033[1;4;{cod};42mFUNDO: VERDE COR: {txt}\033[m")
+                    break
                 elif fundo == "4" or fundo == "AMARELO":
                     print (f"\033[1;4;{cod};43mFUNDO: AMARELO COR: {txt}\033[m")
+                    break
                 elif fundo == "5" or fundo == "ROXO":
                     print (f"\033[1;4;{cod};44mFUNDO: ROXO COR: {txt}\033[m")
+                    break
                 elif fundo == "6" or fundo == "AZUL":
                     print (f"\033[1;4;{cod};45mFUNDO: AZUL COR: {txt}\033[m") 
+                    break
                 elif fundo == "7" or fundo == "AZUL CLARO":
                     print (f"\033[1;4;{cod};46mFUNDO: AZUL CLARO COR: {txt}\033[m")
+                    break
                 elif fundo == "8" or fundo == "CINZA":
                     print (f"\033[1;4;{cod};40mFUNDO: CINZA COR: {txt}\033[m")
+                    break
                 else:
                     print ("Não encontrado! Tente novamente.")
-                    continue
                 break
+            break    
     elif cor == "13" or cor == "CONFIRMAR IDADE":
         l()
         print (f"Que legal! Você escolheu \033[1;4;32mConfirmar\033[m \033[1;4;33midade\033[m")
@@ -385,6 +394,13 @@ while True:
         print (f"Escrito normalmente: {nome.title()}")
         print (f"Quantas letras tem no total: {len (nome.replace (' ', ''))}")
         e()
+    elif cor == "16" or cor == "TEMPORIZADOR":
+        l()
+        tmp = int(input("Digite quantos segundos você quer: "))
+        l()
+        from time import sleep
+        sleep(tmp)
+        print (f"O tempo de {tmp} segundos acabou!")
     l()
     print ("Deseja continuar?")
     while True:
