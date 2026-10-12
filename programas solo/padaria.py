@@ -53,5 +53,6 @@ while True:
 
         break
 taxa = 7.31
-total += taxa
+viagem = 8.12
+total += taxa + viagem
 print (f"O total é de R${total:.2f}")
