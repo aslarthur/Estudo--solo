@@ -55,4 +55,5 @@ while True:
 taxa = 7.31
 viagem = 8.12
 total += taxa + viagem
+e()
 print (f"O total é de R${total:.2f}")
