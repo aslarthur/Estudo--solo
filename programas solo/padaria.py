@@ -11,7 +11,7 @@ while True:
     print (f"\033[1;4;3;31mP\033[m\033[4;1;3;32mR\033[m\033[4;1;3;33mO\033[m\033[4;1;3;34mD\033[m\033[4;1;3;35mU\033[m\033[4;1;3;36mT\033[m\033[4;1;3;31mO\033[m\033[4;1;3;32mS\033[m: ")
     e()
     produtos = {'Pão': 3.21, 'Sonho': 5.23, 'Pão de queijo': 2.23, 'Coxinha': 3.12, 'Quibe': 3.12 }
-    ir = 0.5
+    ir = 0.5 #imposto de renda
     
     for n, (a, b) in enumerate(produtos.items(), start=1):
         
@@ -20,11 +20,11 @@ while True:
     l()
     nova_entrada = input("Digite o número ou produto que deseja: ")
     quantidade = int(input("Digite a quantidade que deseja: "))
-    entrada = nova_entrada.upper().strip()
+    entrada = nova_entrada.upper().strip() 
      
     if entrada == "1" or entrada == "PÃO":
         total += produtos ['Pão'] * quantidade
-        total += ((produtos ['Pão'] * quantidade)  *ir /100)
+        total += ((produtos ['Pão'] * quantidade)  * ir /100)
         
     elif entrada == "2" or entrada == "SONHO":
         total += produtos ['Sonho']* quantidade
